@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            height: 80vh;
+            width: 100vw;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .btn {
+            width: 400px;
+            border-radius: 20px;
+            font-size: 34px;
+            padding: 17px 30px;
+            background-color: rgb(90, 11, 11);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+    <title>Log out</title>
+</head>
+
+<body>
+    <h1>Hi,<%= name %>
+    </h1>
+    <form action="/logout" method="get">
+        <button class="btn" type="submit">Log out</button>
+    </form>
+</body>
+
+</html>
